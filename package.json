@@ -1,0 +1,15 @@
+{
+  "name": "testing-ex-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "testing ex 1/.bin/_mocha -- test.js",
+    "example-fail": "echo \"This is the example hook, I exit with 1\" && exit 1",
+    "example-pass": "echo \"This is the example hook, I exit with 0\" && exit 0",
+    "install": "node install.js",
+    "test": "mocha test.js",
+    "test-travis": "node_modules/.bin/_mocha --report lcovonly -- test.js",
+    "uninstall": "node uninstall.js"
+   }
+}
